@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Actions</h1>
+        <a href="/dashboard"><button class="btn btn-primary  text-uppercase">Dashboard Home</button></a>    
+        <a href="/logout"><button class="btn btn-primary text-uppercase" style="float: right;">LOGOUT</button></a>
+        <hr/>
+        <h2>Add/Edit Posts</h2>
+            <form class="form" action="/edit/{{post.sno}}" method="POST">
+                <label for="title">Tile</label>
+                <input type="text" class="form-control" name="title" placeholder="title" id="title" value="{{post.title}}">
+
+                <label for="slug">Slug</label>
+                <input type="text" class="form-control" name="slug" placeholder="slug" id="slug" value="{{post.slug}}">
+
+                <label for="content">content</label>
+                <textarea class="form-control" rows="40" name="content" id="content">{{post.content}}</textarea>
+                <br/>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+    </div>
+</body>
+
+</html>

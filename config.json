@@ -1,0 +1,18 @@
+{
+    "params":
+    {
+        "local_server":"true",
+        "local_uri":"mysql://root:@localhost/coderboy",
+        "prod_uri":"mysql://root:@localhost/coderboy",
+        "fburl":"https://www.facebook.com",
+        "gurl":"https://www.github.com",
+        "turl":"https://www.twitter.com",
+        "blog_name":"Coder Boy",
+        "gmail_user":"arundk055@gmail.com",
+        "gmail_pass":"arjunsaud",
+        "no_of_posts":2,
+        "admin_user":"admin",
+        "admin_password":"admin",
+        "upload_location":"/home/anon/Desktop/Flask/static"
+    }
+}
